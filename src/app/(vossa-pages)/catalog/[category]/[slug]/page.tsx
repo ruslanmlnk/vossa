@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 
-import { ProductDetailPage } from "@/components/vossa-site/ProductDetailPage";
-import { getCatalogProductBySlug, getProductDetail } from "@/components/vossa-site/data";
+import { getCatalogProductBySlug, getProductDetail } from "@/components/ui/data";
+import ProductDetailPage from "@/app/(vossa-pages)/product/[slug]/page";
 
 export default async function Page({
   params,
@@ -21,5 +21,5 @@ export default async function Page({
     notFound();
   }
 
-  return <ProductDetailPage product={detail} />;
+  return <ProductDetailPage params={Promise.resolve({ slug })} />;
 }

@@ -2,6 +2,7 @@ export type SiteNavLink = {
   label: string;
   href: string;
   matchStartsWith?: boolean;
+  hasChevron?: boolean;
 };
 
 export type FooterGroup = {
@@ -92,12 +93,13 @@ export type ProductDetail = {
 };
 
 export const siteNavLinks: SiteNavLink[] = [
-  { label: "Каталог", href: "/catalog", matchStartsWith: true },
+  { label: "Каталог", href: "/catalog", matchStartsWith: true, hasChevron: true },
   { label: "Дизайнерам", href: "/designers", matchStartsWith: true },
   {
     label: "Покупцям",
     href: "/delivery-and-payment-info",
     matchStartsWith: true,
+    hasChevron: true
   },
   { label: "Про Vossa", href: "/about" },
   { label: "Проєкти дизайнерів", href: "/projects", matchStartsWith: true },

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { selectionSection } from "../data";
+import { selectionSection } from "./data";
 
 export function SelectionSection() {
   return (

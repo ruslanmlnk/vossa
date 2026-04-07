@@ -1,5 +1,9 @@
-import { CatalogPage } from "@/components/vossa-site/CatalogPage";
-import type { CatalogCategory } from "@/components/vossa-site/data";
+import { type CatalogCategory } from "@/components/ui/data";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { SelectionSection } from "@/components/ui/SelectionSection";
+
+import { CatalogMainSection } from "./_components/CatalogMainSection";
+import { CatalogUpholsterySection } from "./_components/CatalogUpholsterySection";
 
 export default async function Page({
   searchParams,
@@ -12,5 +16,20 @@ export default async function Page({
       ? (params.category as CatalogCategory)
       : "all";
 
-  return <CatalogPage initialCategory={category} />;
+  return (
+    <>
+      <Breadcrumbs
+        items={[
+          { label: "Головна", href: "/" },
+          { label: "Каталог" },
+        ]}
+      />
+
+      <CatalogMainSection initialCategory={category} />
+
+      <CatalogUpholsterySection />
+
+      <SelectionSection />
+    </>
+  );
 }

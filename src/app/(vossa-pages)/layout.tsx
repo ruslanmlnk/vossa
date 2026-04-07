@@ -1,5 +1,5 @@
-import { SiteFooter } from "@/components/vossa-site/shared/SiteFooter";
-import { SiteHeader } from "@/components/vossa-site/shared/SiteHeader";
+import { SiteFooter } from "@/components/ui/SiteFooter";
+import { SiteHeader } from "@/components/ui/SiteHeader";
 
 export default function VossaPagesLayout({
   children,

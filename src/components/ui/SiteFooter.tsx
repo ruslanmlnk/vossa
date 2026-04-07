@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { VossaLogo } from "@/components/vossa/shared/VossaLogo";
 
-import { footerGroups, socialLinks } from "../data";
+import { footerGroups, socialLinks } from "./data";
 import { ButtonLink } from "./Buttons";
 
 export function SiteFooter() {

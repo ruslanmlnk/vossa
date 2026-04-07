@@ -147,66 +147,7 @@ export function HeroSection() {
             src="/vossa/hero-sofa-foreground.png"
           />
 
-          <div
-            className="absolute inset-x-0 top-0 flex items-center justify-between border-b border-white/20"
-            style={{
-              height: cqw(98),
-              paddingLeft: cqw(60),
-              paddingRight: cqw(60),
-            }}
-          >
-            <a aria-label="VOSSA" href="#">
-              <Image
-                alt="VOSSA"
-                height={48}
-                src="/vossa/hero-logo-light.png"
-                style={{ width: cqw(135), height: cqw(48) }}
-                width={135}
-              />
-            </a>
 
-            <div
-              className="flex items-center"
-              style={{ gap: cqw(30), fontFamily: bodyFont }}
-            >
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  className="flex items-center uppercase text-white transition hover:text-white/90"
-                  href="#"
-                  style={{
-                    gap: cqw(7),
-                    paddingTop: cqw(39),
-                    paddingBottom: cqw(39),
-                    fontSize: cqw(16),
-                    fontWeight: item.active ? 500 : 300,
-                    width: item.width ? cqw(item.width) : undefined,
-                    justifyContent: item.width ? "space-between" : undefined,
-                    lineHeight: "normal",
-                  }}
-                >
-                  <span>{item.label}</span>
-                  {item.hasChevron ? <MenuChevron /> : null}
-                </a>
-              ))}
-
-              <button
-                className="rounded-full bg-[#B99B6E] text-white uppercase"
-                style={{
-                  padding: `${cqw(14)} ${cqw(28)}`,
-                  borderRadius: cqw(100),
-                  fontFamily: bodyFont,
-                  fontSize: cqw(14),
-                  fontWeight: 400,
-                  lineHeight: "normal",
-                  whiteSpace: "nowrap",
-                }}
-                type="button"
-              >
-                {heroCopy.contactAction}
-              </button>
-            </div>
-          </div>
 
           <div
             className="absolute flex flex-col items-start"
@@ -406,25 +347,7 @@ export function HeroSection() {
         />
 
         <div className="relative z-10 flex min-h-[760px] flex-col px-[14.5px] pb-8 pt-[14.5px]">
-          <div className="flex flex-col items-start gap-3">
-            <a aria-label="VOSSA" href="#">
-              <Image
-                alt="VOSSA"
-                className="h-auto w-[98px]"
-                height={48}
-                src="/vossa/hero-logo-light.png"
-                width={135}
-              />
-            </a>
 
-            <button
-              className="rounded-full bg-[#B99B6E] px-4 py-2.5 text-[10px] uppercase text-white"
-              style={{ fontFamily: bodyFont, lineHeight: "normal" }}
-              type="button"
-            >
-              {heroCopy.contactAction}
-            </button>
-          </div>
 
           <div className="mt-12 max-w-[355px]">
             <p

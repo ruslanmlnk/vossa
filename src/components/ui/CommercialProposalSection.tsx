@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { commercialProposalSection } from "../data";
+import { commercialProposalSection } from "./data";
 import { ButtonLink } from "./Buttons";
 
 type CommercialProposalSectionProps = {

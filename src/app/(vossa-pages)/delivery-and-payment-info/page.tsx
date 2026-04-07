@@ -1,5 +1,1 @@
-import { PaymentInfoPage } from "@/components/vossa-site/PaymentInfoPage";
-
-export default function Page() {
-  return <PaymentInfoPage />;
-}
+export { default } from "@/app/(vossa-pages)/payment-and-delivery-info/page";

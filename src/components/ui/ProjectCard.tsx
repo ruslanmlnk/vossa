@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { CircleArrow } from "@/components/vossa/shared/CircleArrow";
 
-import type { ProjectCardData } from "../data";
+import type { ProjectCardData } from "./data";
 
 type ProjectCardProps = {
   project: ProjectCardData;
