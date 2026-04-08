@@ -37,6 +37,17 @@ export function SiteHeader() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const { overflow } = document.body.style;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = overflow;
+    };
+  }, [isOpen]);
+
   const isHome = pathname === "/";
   const transparent = isHome && !scrolled && !isOpen;
 
@@ -55,7 +66,7 @@ export function SiteHeader() {
           <VossaLogo dark={!transparent} width={135} height={48} />
         </Link>
 
-        <nav className="hidden items-center gap-[30px] xl:flex">
+        <nav className="hidden items-center gap-[30px] font-sans xl:flex">
           {siteNavLinks.map((item) => {
             const active = isActivePath(pathname, item.href, item.matchStartsWith);
 
@@ -99,7 +110,7 @@ export function SiteHeader() {
           <Link
             href="/contact"
             className={cn(
-              "inline-flex items-center justify-center rounded-full px-[28px] py-[14px] text-[14px] uppercase transition",
+              "inline-flex items-center justify-center rounded-full px-[28px] py-[14px] text-[14px] uppercase transition font-sans",
               "bg-[#B99B6E] !text-white hover:bg-[#a68a5f]"
             )}
           >
@@ -128,7 +139,7 @@ export function SiteHeader() {
       </div>
 
       {isOpen && (
-        <div className="border-t border-[#38312a]/10 px-4 py-5 sm:px-8 xl:hidden bg-[#f6f3ef]/95 backdrop-blur-xl absolute w-full left-0">
+        <div className="absolute left-0 top-full w-full border-t border-[#38312a]/10 bg-[#f6f3ef]/95 px-4 py-5 shadow-[0_18px_40px_rgba(56,49,42,0.08)] backdrop-blur-xl sm:px-8 xl:hidden">
           <div className="mx-auto flex max-w-[1728px] flex-col gap-4">
             {siteNavLinks.map((item) => {
               const active = isActivePath(pathname, item.href, item.matchStartsWith);

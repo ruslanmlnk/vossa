@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Forum, Manrope } from "next/font/google";
+import { Forum } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -8,18 +8,18 @@ const forum = Forum({
   subsets: ["latin", "cyrillic"],
   weight: "400",
 });
-
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "500", "600"],
-});
-
 const gravhez = localFont({
   src: "./fonts/GRAVHEZ.otf",
   variable: "--font-gravhez",
   display: "swap",
   weight: "400",
+});
+
+const peridot = localFont({
+  src: "./fonts/fonnts.com-Peridot_PE_Variable_Regular.otf",
+  variable: "--font-peridot",
+  display: "swap",
+  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -35,9 +35,11 @@ export default function RootLayout({
   return (
     <html
       lang="uk"
-      className={`${forum.variable} ${manrope.variable} ${gravhez.variable} h-full antialiased`}
+      className={`${forum.variable} ${gravhez.variable} ${peridot.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col bg-background text-foreground">
+        {children}
+      </body>
     </html>
   );
 }

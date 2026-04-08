@@ -2,7 +2,7 @@
 
 import { startTransition, useEffect, useRef, useState } from "react";
 
-const bodyFont = "'Peridot PE Variable', var(--font-manrope), sans-serif";
+const bodyFont = "var(--font-peridot), sans-serif";
 
 const clamp = (value: number) => Math.min(Math.max(value, 0), 1);
 

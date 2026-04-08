@@ -8,16 +8,19 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-manrope);
+  --font-sans: var(--font-peridot), sans-serif;
   --font-mono: "Cascadia Code", "SFMono-Regular", monospace;
 }
 
 * {
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 html {
   background: var(--background);
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +28,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -36,7 +40,6 @@ a {
   font-family: var(--font-forum), Georgia, serif;
 }
 
-.scroll-fill,
 .scroll-fill-line {
   --fill-progress: 0;
   color: transparent;
@@ -51,4 +54,9 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background-image 80ms linear;
+}
+
+::selection {
+  background: #b99b6e;
+  color: #fff;
 }

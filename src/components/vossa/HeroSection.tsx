@@ -3,18 +3,9 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const bodyFont = "'Peridot PE Variable', var(--font-manrope), sans-serif";
+const bodyFont = "var(--font-peridot), sans-serif";
 const titleFont = "var(--font-gravhez), var(--font-forum), serif";
 const cqw = (value: number) => `${(value / 1728) * 100}cqw`;
-
-const navItems = [
-  { label: "Каталог", active: true, hasChevron: true, width: 83 },
-  { label: "Дизайнерам" },
-  { label: "Покупцям", hasChevron: true },
-  { label: "Про Vossa" },
-  { label: "Проекти дизайнерів" },
-  { label: "Контакти" },
-];
 
 const heroCopy = {
   eyebrow: "Коли інтер’єр говорить - він говорить",
@@ -24,7 +15,6 @@ const heroCopy = {
     "задають тон. Стриманий дизайн, бездоганна якість і впевнений характер.",
   primaryAction: "Перейти в каталог",
   secondaryAction: "Перейти на портал дизайнера",
-  contactAction: "Зв’язатись з нами",
   cardCaption: "Міцність · Легкий догляд",
   cardTitle: "Тактильна преміальна текстура",
   cardDescription:
@@ -36,20 +26,6 @@ const markers = [
   { left: 535, top: 770 },
   { left: 874, top: 685 },
 ];
-
-function MenuChevron() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 6 3"
-      width="6"
-      height="3"
-      style={{ width: cqw(6), height: cqw(3) }}
-    >
-      <path d="M0 0L3 3L6 0" fill="none" stroke="white" strokeWidth="1" />
-    </svg>
-  );
-}
 
 function Dot() {
   return (
