@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -46,7 +46,7 @@ export function ProjectsListSection() {
           {/* Note: Figma has image top at 608px. In our container where "Проєкти" is at top 0, the image top is 410px. */}
           <div className="absolute left-[-60px] w-[calc(100%+120px)] top-[508px] h-[509px] overflow-hidden rounded-[30px] bg-[#f6f3ef]">
             <Image
-              src="/vossa-pages/f93f719bead5af6c345415e8295771313a891a75.png"
+              src="/vossa-pages/projects-hero-showroom-badge.png"
               alt="Проєкти дизайнерів"
               fill
               sizes="(min-width: 1280px) 1728px, 100vw"
@@ -79,7 +79,7 @@ export function ProjectsListSection() {
 
           <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[20px] bg-[#f6f3ef]">
             <Image
-              src="/vossa-pages/e3843e422cc0b5abba066c678dfea0021cd305f7.jpg"
+              src="/vossa-pages/projects-hero-showroom-pill.jpg"
               alt="Проєкти дизайнерів"
               fill
               sizes="100vw"
@@ -158,3 +158,5 @@ export function ProjectsListSection() {
     </section>
   );
 }
+
+

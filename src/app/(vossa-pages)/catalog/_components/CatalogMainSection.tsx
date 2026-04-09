@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -153,7 +153,7 @@ export function CatalogMainSection({ initialCategory }: CatalogMainSectionProps)
 
           <article className="relative overflow-hidden rounded-[28px] bg-[#181512] p-6 text-white shadow-[0_14px_44px_rgba(20,16,14,0.22)] xl:min-h-[620px]">
             <Image
-              src="/vossa-pages/909263de88b5ba59f08ccdf9e66950cd4486ab0e.jpg"
+              src="/vossa-pages/catalog-main-showroom.jpg"
               alt="Підібрати опції"
               fill
               sizes="(min-width: 1280px) 516px, 100vw"
@@ -179,3 +179,4 @@ export function CatalogMainSection({ initialCategory }: CatalogMainSectionProps)
     </section>
   );
 }
+

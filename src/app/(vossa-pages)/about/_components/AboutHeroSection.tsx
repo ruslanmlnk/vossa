@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 
 import { ButtonLink } from "@/components/ui/Buttons";
 
@@ -28,7 +28,7 @@ export function AboutHeroSection() {
         <div className="relative mt-8 overflow-hidden rounded-[36px]">
           <div className="relative aspect-[1728/620] min-h-[320px]">
             <Image
-              src="/vossa-pages/02067ffba790c81590430ce05b9cdf85d58919b1.jpg"
+              src="/vossa-pages/about-hero-showroom.jpg"
               alt="Про VOSSA"
               fill
               priority
@@ -63,7 +63,7 @@ export function AboutHeroSection() {
           <div className="relative overflow-hidden rounded-[32px] bg-white">
             <div className="relative aspect-[1032/760]">
               <Image
-                src="/vossa-pages/bcc0c726f763cdbc9140605c61064b6c39d47b2b.jpg"
+                src="/vossa-pages/about-secondary-interior.jpg"
                 alt="Інтер'єр VOSSA"
                 fill
                 sizes="(min-width: 1280px) 60vw, 100vw"
@@ -76,3 +76,4 @@ export function AboutHeroSection() {
     </section>
   );
 }
+

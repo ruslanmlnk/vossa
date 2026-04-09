@@ -1,4 +1,4 @@
-export type SiteNavLink = {
+﻿export type SiteNavLink = {
   label: string;
   href: string;
   matchStartsWith?: boolean;
@@ -146,7 +146,7 @@ export const catalogProducts: CatalogProduct[] = [
     slug: "vena-pryamyi",
     category: "sofas",
     categoryLabel: "Дивани",
-    image: "/vossa-pages/bceb815ee77140b61e2b38c1b55e8d505210b3fe.jpg",
+    image: "/vossa-pages/catalog-product-modular-sofa-01.jpg",
     price: "₴39,500",
     oldPrice: "₴42,500",
     description:
@@ -157,7 +157,7 @@ export const catalogProducts: CatalogProduct[] = [
     slug: "vena",
     category: "beds",
     categoryLabel: "Ліжка",
-    image: "/vossa-pages/572674724066c96ce42629fa37199a7a8f62a4ea.jpg",
+    image: "/vossa-pages/catalog-product-vena-bed.jpg",
     price: "₴11,999",
     oldPrice: "₴13,999",
     description:
@@ -168,7 +168,7 @@ export const catalogProducts: CatalogProduct[] = [
     slug: "sona",
     category: "beds",
     categoryLabel: "Ліжка",
-    image: "/vossa-pages/9076f3702aae03bb0aacc0505989adeaabb9c2f9.jpg",
+    image: "/vossa-pages/catalog-product-sona-bed.jpg",
     price: "₴67,500",
     oldPrice: "₴13,999",
     description:
@@ -179,7 +179,7 @@ export const catalogProducts: CatalogProduct[] = [
     slug: "rello-u-01",
     category: "sofas",
     categoryLabel: "Дивани",
-    image: "/vossa-pages/9aeb6497b67393d8b2c53bb1b919b9635cdefa27.jpg",
+    image: "/vossa-pages/catalog-product-rello-u-01.jpg",
     price: "₴75,500",
     oldPrice: "₴75,999",
     accent: "AR",
@@ -191,7 +191,7 @@ export const catalogProducts: CatalogProduct[] = [
     slug: "line",
     category: "beds",
     categoryLabel: "Ліжка",
-    image: "/vossa-pages/0bb843be6b240ec0a421c4af623f369feae07c60.jpg",
+    image: "/vossa-pages/catalog-product-line-bed.jpg",
     price: "₴85,500",
     oldPrice: "₴13,999",
     description:
@@ -202,18 +202,38 @@ export const catalogProducts: CatalogProduct[] = [
     slug: "rello-l-05",
     category: "sofas",
     categoryLabel: "Дивани",
-    image: "/vossa-pages/ab4e72cf6039fd22168a2b7aa37f9e4d8456c386.jpg",
+    image: "/vossa-pages/catalog-product-rello-l-05.jpg",
     price: "₴71,500",
     oldPrice: "₴13,999",
     description:
       "Кутова конфігурація з м’яким ритмом модулів, яку легко інтегрувати в вітальні з відкритим плануванням.",
   },
   {
+    name: "Rello, L 04",
+    slug: "rello-l-04",
+    category: "sofas",
+    categoryLabel: "Дивани",
+    image: "/vossa-pages/catalog-product-rello-l-04.jpg",
+    price: "₴62,500",
+    description:
+      "Лаконічна конфігурація Rello для сучасних віталень, де важливі чиста геометрія, глибока посадка і виразний силует.",
+  },
+  {
+    name: "Rello, L 03",
+    slug: "rello-l-03",
+    category: "sofas",
+    categoryLabel: "Дивани",
+    image: "/vossa-pages/catalog-product-rello-l-03.jpg",
+    price: "₴65,500",
+    description:
+      "М’яка кутова композиція з гармонійним ритмом модулів, яка тримає простір і дає відчуття преміального комфорту.",
+  },
+  {
     name: "Kivo",
     slug: "kivo",
     category: "beds",
     categoryLabel: "Ліжка",
-    image: "/vossa-pages/8fb1863c9e8f8d3ef4f4ae1c038b7d3b9ae3472b.jpg",
+    image: "/vossa-pages/catalog-product-kivo-bed.jpg",
     price: "₴98,500",
     oldPrice: "₴101,500",
     description:
@@ -224,7 +244,7 @@ export const catalogProducts: CatalogProduct[] = [
     slug: "orvo-l-01",
     category: "sofas",
     categoryLabel: "Дивани",
-    image: "/vossa-pages/bceb815ee77140b61e2b38c1b55e8d505210b3fe.jpg",
+    image: "/vossa-pages/catalog-product-modular-sofa-01.jpg",
     price: "₴37,500",
     oldPrice: "₴13,999",
     description:
@@ -236,13 +256,13 @@ export const catalogFeaturedCards = [
   {
     title: "Vena, прямий",
     price: "від ₴39,500",
-    image: "/vossa-pages/8a9fe79fb6b9caed7e62c98f9442ec93235c008c.jpg",
+    image: "/vossa-pages/catalog-featured-sofa-pill.jpg",
     href: "/catalog/sofas/vena-pryamyi",
   },
   {
     title: "Vena",
     price: "від ₴11,999",
-    image: "/vossa-pages/6eaf9b83a04fa78554916cd5323f53815d9e5cfd.jpg",
+    image: "/vossa-pages/catalog-featured-bed-pill.jpg",
     href: "/catalog/beds/vena",
   },
 ];
@@ -251,7 +271,7 @@ export const upholsterySection = {
   title: "Тканини, що тримають рівень",
   eyebrowLeft: "quality",
   eyebrowRight: "in details",
-  image: "/vossa-pages/123b7b62495dd8d3c4f2672f3a92dbafec97ac16.jpg",
+  image: "/vossa-pages/upholstery-velvet-green-swatch.jpg",
   label: "Велюр",
   lead:
     "Оббивка визначає не лише вигляд, а й відчуття меблів у щоденному використанні. У VOSSA — різні типи тканин і широка палітра відтінків, щоб модель точно “сіла” у ваш простір.",
@@ -280,7 +300,7 @@ export const workflowSteps: WorkflowStep[] = [
     title: "Підбір моделі",
     description:
       "Пропонуємо 2–3 варіанти під ваш проєкт і планування. За потреби підбираємо альтернативні модулі та розміщення, щоб рішення виглядало впевнено в інтер’єрі.",
-    image: "/vossa-pages/afed20af6acb7c14d6200db27f2a4d9670047f14.jpg",
+    image: "/vossa-pages/workflow-model-selection.jpg",
   },
   {
     title: "Тканини та відтінки",
@@ -291,13 +311,13 @@ export const workflowSteps: WorkflowStep[] = [
     title: "Технічний пакет",
     description:
       "Надаємо креслення з габаритами та 3D-модель для інтеграції в проєкт. Це допомагає швидко узгодити рішення з клієнтом і підрядниками.",
-    image: "/vossa-pages/a571485d7a9611a3f8d7e08e459d517a783bb597.jpg",
+    image: "/vossa-pages/workflow-tech-pack.jpg",
   },
   {
     title: "Подальший супровід",
     description:
       "Фіксуємо комплектацію, тканину та терміни й запускаємо виробництво. Супроводжуємо замовлення до доставки, щоб результат був передбачуваним і якісним.",
-    image: "/vossa-pages/f2982746a4a6be7d4e1e368875df42638797602d.jpg",
+    image: "/vossa-pages/workflow-order-support.jpg",
   },
 ];
 
@@ -367,30 +387,30 @@ export const partnerTiers: PartnerTier[] = [
 
 export const sharedProjects: ProjectCardData[] = [
   {
-    image: "/vossa-pages/61391d8d374335b9ff7f46c9697e5ef877c07d74.jpg",
-    avatar: "/vossa-pages/d168fcb8197caf8c1676162d229bb0815130e809.jpg",
+    image: "/vossa-pages/project-card-residence-01.jpg",
+    avatar: "/vossa-pages/project-avatar-designer-01.jpg",
     designer: "Anna Design",
     type: "realized",
     tag: "orlo l01",
     href: "/catalog/sofas/orvo-l-01",
   },
   {
-    image: "/vossa-pages/ac315fe226123fb2784ce81ae2100237090f4ff9.jpg",
-    avatar: "/vossa-pages/c5b84c5926d81f5cc6ffb7af73fdf1c5c3105ae3.jpg",
+    image: "/vossa-pages/project-card-residence-02.jpg",
+    avatar: "/vossa-pages/project-avatar-designer-02.jpg",
     designer: "Anna Design",
     type: "visualization",
     href: "/catalog/sofas/rello-l-05",
   },
   {
-    image: "/vossa-pages/f6a6b27015fc273eb749639319151a236dca3609.jpg",
-    avatar: "/vossa-pages/85ea3340358f901c32b40ae26d07c542702db7b0.jpg",
+    image: "/vossa-pages/project-card-residence-03.jpg",
+    avatar: "/vossa-pages/project-avatar-designer-03.jpg",
     designer: "Anna Design",
     type: "realized",
     href: "/catalog/sofas/rello-u-01",
   },
   {
-    image: "/vossa-pages/8b5c62b4ace537ce5a3ef3251691e5cddfc14169.jpg",
-    avatar: "/vossa-pages/7ad1c589d74ac9d7e02d63e661923380ada9879a.jpg",
+    image: "/vossa-pages/project-card-residence-04.jpg",
+    avatar: "/vossa-pages/project-avatar-designer-04.jpg",
     designer: "Anna Design",
     type: "visualization",
     href: "/catalog/beds/sona",
@@ -421,8 +441,8 @@ export const partnerCtaSection = {
   description:
     "Партнерська програма VOSSA для дизайнерів та архітекторів: зручні умови, підтримка проєктів і матеріали, з якими легко працювати — щоб ви впевнено рекомендували нас клієнтам.",
   action: "Подати заявку на партнерство",
-  primaryPill: "/vossa-pages/a6cdcb0da3f1496f7f9ee7155caff690d2bfda37.jpg",
-  secondaryPill: "/vossa-pages/3101c5956ab001a114db0fd4022cd9761f9ba884.jpg",
+  primaryPill: "/vossa-pages/commercial-proposal-pill-sofa.jpg",
+  secondaryPill: "/vossa-pages/partner-pill-lounge.jpg",
 };
 
 export const contactInfo: ContactInfoItem[] = [
@@ -545,10 +565,10 @@ const productDetailOverrides: Record<string, ProductDetail> = {
     summary:
       "Модульний диван із впевненими пропорціями та м’якою посадкою — для сучасних просторів і щоденного комфорту.",
     gallery: [
-      "/vossa-pages/f42b65c03dc6124a4bf88e2d0e22ec229633b6c5.jpg",
-      "/vossa-pages/f9c239f4a0401a4dd10def95376720f1882773d4.jpg",
+      "/vossa-pages/product-rello-u-01-main.jpg",
+      "/vossa-pages/product-rello-u-01-preview.jpg",
     ],
-    fabricSwatch: "/vossa-pages/63634cdbab8dcf04a3dcaf4bf2aeb9e02fd30947.jpg",
+    fabricSwatch: "/vossa-pages/fabric-swatch-velvet-touch-01.jpg",
     fabricName: "Velvet Touch, 01",
     sizes: ["320×220", "360×181", "380×260", "Власний розмір"],
     activeSize: "320×220",
@@ -558,7 +578,7 @@ const productDetailOverrides: Record<string, ProductDetail> = {
       "Модульність дає свободу планування: диван легко підлаштувати під кімнату, зону відпочинку або змінити конфігурацію, коли змінюються потреби. Низькі опори додають візуальної легкості — модель ніби пливе над підлогою, зберігаючи масивність і стабільність у сприйнятті.",
       "Це рішення для інтер’єрів, де важливі тактильність матеріалів, акуратність деталей і чиста геометрія. RELLО, U 01 однаково органічно працює і в сучасному мінімалізмі, і в теплих нейтральних просторах — як впевнений, преміальний акцент без зайвого шуму.",
     ],
-    storyImage: "/vossa-pages/f7fcec8acbcc2fa2b99dd0a0bae62f79bd45b870.jpg",
+    storyImage: "/vossa-pages/product-rello-u-01-lifestyle-pill.jpg",
     specs: [
       { label: "Тип", value: "Модульний диван" },
       { label: "Конфігурація", value: "U-форма / секційний" },
@@ -595,7 +615,7 @@ const productDetailOverrides: Record<string, ProductDetail> = {
       { id: "warranty", title: "Гарантія", kind: "warranty" },
       { id: "shipping", title: "Доставка та оплата", kind: "shipping" },
     ],
-    relatedSlugs: ["rello-l-05", "line", "kivo"],
+    relatedSlugs: ["rello-l-05", "rello-l-04", "rello-l-03"],
   },
 };
 
@@ -623,14 +643,14 @@ export function getProductDetail(slug: string): ProductDetail | null {
     name: product.name,
     slug: product.slug,
     category: product.category,
-    categoryLabel: product.categoryLabel,
+    categoryLabel: product.category === "beds" ? "Ліжка" : "Дивани",
     collectionLabel:
       product.category === "beds" ? "М’яке ліжко" : "Модульний диван",
     price: product.price,
     oldPrice: product.oldPrice,
     summary: product.description,
     gallery: [product.image, product.image],
-    fabricSwatch: "/vossa-pages/63634cdbab8dcf04a3dcaf4bf2aeb9e02fd30947.jpg",
+    fabricSwatch: "/vossa-pages/fabric-swatch-velvet-touch-01.jpg",
     fabricName: "Velvet Touch, 01",
     sizes:
       product.category === "beds"
@@ -644,8 +664,8 @@ export function getProductDetail(slug: string): ProductDetail | null {
     ],
     storyImage:
       product.category === "beds"
-        ? "/vossa-pages/02067ffba790c81590430ce05b9cdf85d58919b1.jpg"
-        : "/vossa-pages/f7fcec8acbcc2fa2b99dd0a0bae62f79bd45b870.jpg",
+        ? "/vossa-pages/about-hero-showroom.jpg"
+        : "/vossa-pages/product-rello-u-01-lifestyle-pill.jpg",
     specs: [
       {
         label: "Категорія",
@@ -689,3 +709,5 @@ export function getProductDetail(slug: string): ProductDetail | null {
       .map((item) => item.slug),
   };
 }
+
+

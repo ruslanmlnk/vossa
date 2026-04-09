@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 
 export function AboutStorySection() {
   return (
@@ -30,7 +30,7 @@ export function AboutStorySection() {
         <div className="relative overflow-hidden rounded-[32px]">
           <div className="relative aspect-[1578/840]">
             <Image
-              src="/vossa-pages/188ba625fe3c657cff7d52d33b6fe7e09a7c0f9e.jpg"
+              src="/vossa-pages/about-story-showroom.jpg"
               alt="Команда VOSSA"
               fill
               sizes="(min-width: 1280px) 60vw, 100vw"
@@ -42,3 +42,4 @@ export function AboutStorySection() {
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 
 type DesignerPartnershipHeroProps = {
   titleTop?: string;
@@ -46,7 +46,7 @@ export function DesignerPartnershipHero({
           {/* Large Image container matching 1728px design (4/5 ratio visible area) */}
           <div className="absolute right-0 top-[410px] w-full h-[509px] overflow-hidden rounded-[30px] bg-[#f6f3ef]">
             <Image
-              src="/vossa-pages/77dfd0d981614ab3e3f5632d259ad40b160e8fda.png"
+              src="/vossa-pages/designers-hero-showroom-desktop.png"
               alt="Partnership"
               fill
               sizes="(min-width: 1280px) 1608px, 100vw"
@@ -80,7 +80,7 @@ export function DesignerPartnershipHero({
 
           <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[20px] bg-[#f6f3ef]">
             <Image
-              src="/vossa-pages/b3ce17ee4bacc7fde14022a5fb59e0b20efe7432.jpg"
+              src="/vossa-pages/designers-hero-showroom-mobile.jpg"
               alt="Partnership"
               fill
               sizes="100vw"
@@ -94,3 +94,5 @@ export function DesignerPartnershipHero({
 }
 
 export default DesignerPartnershipHero;
+
+

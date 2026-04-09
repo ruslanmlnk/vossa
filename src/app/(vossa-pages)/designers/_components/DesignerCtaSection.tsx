@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 
 export function DesignerCtaSection() {
   return (
@@ -7,7 +7,7 @@ export function DesignerCtaSection() {
         {/* Background Image Container */}
         <div className="absolute inset-0">
           <Image
-            src="/vossa-pages/0ce37b7b1f26bfd2c118b2db18ff23ad6339abb5.jpg"
+            src="/vossa-pages/designers-cta-showroom-pill.jpg"
             alt="Готові почати співпрацю"
             fill
             sizes="100vw"
@@ -36,3 +36,4 @@ export function DesignerCtaSection() {
     </section>
   );
 }
+
